@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisa Estrada | Portafolio</title>
+    <meta name="description" content="Portafolio de Luisa Estrada, estudiante de desarrollo de software en Riwi.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-portfolio-rose: #e87991;
+            --color-portfolio-ink: #292333;
+        }
+    </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#fff9f7] font-sans text-portfolio-ink antialiased">
+    <header class="sticky top-0 z-50 border-b border-rose-100 bg-white/90 backdrop-blur">
+        <nav aria-label="Navegación principal" class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+            <a href="#inicio" class="text-lg font-extrabold tracking-tight text-portfolio-ink">Luisa<span class="text-portfolio-rose">.</span></a>
+            <div class="flex items-center gap-4 text-sm font-semibold text-slate-600 sm:gap-7">
+                <a href="#sobre-mi" class="transition hover:text-portfolio-rose">Sobre mí</a>
+                <a href="#formacion" class="transition hover:text-portfolio-rose">Formación</a>
+                <a href="#proyectos" class="transition hover:text-portfolio-rose">Proyectos</a>
+                <a href="#contacto" class="hidden rounded-full bg-portfolio-ink px-4 py-2 text-white transition hover:bg-portfolio-rose sm:inline-flex">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:grid-cols-2 md:gap-16 md:py-20">
+            <div class="order-2 md:order-1">
+                <p class="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-portfolio-rose">Hola, bienvenida/o a mi espacio</p>
+                <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">Soy Luisa <span class="text-portfolio-rose">Estrada</span></h1>
+                <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">Estudiante de desarrollo de software en Riwi, con muchas ganas de aprender y seguir superándome cada día.</p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#proyectos" class="rounded-full bg-portfolio-rose px-6 py-3 font-bold text-white shadow-lg shadow-rose-200 transition hover:-translate-y-0.5 hover:bg-rose-600">Conoce mi trabajo</a>
+                    <a href="mailto:yepesluu@gmail.com" class="rounded-full border border-rose-200 bg-white px-6 py-3 font-bold text-portfolio-ink transition hover:border-portfolio-rose hover:text-portfolio-rose">Escríbeme</a>
+                </div>
+                <a href="https://github.com/LuisaEstradaY" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-semibold text-slate-500 underline decoration-rose-300 underline-offset-4 transition hover:text-portfolio-rose">Visita mi GitHub</a>
+            </div>
+            <div class="order-1 mx-auto w-full max-w-sm md:order-2 md:max-w-md">
+                <div class="rounded-[2rem] bg-rose-200 p-3 shadow-2xl shadow-rose-200/70">
+                    <img src="./img/image.png" alt="Retrato de Luisa Estrada" class="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-center">
+                </div>
+                <p class="mt-4 text-center text-sm font-medium text-slate-500">Aprendiendo, creando y creciendo</p>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="scroll-mt-20 bg-white py-20">
+            <div class="mx-auto max-w-4xl px-5 text-center sm:px-8">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] text-portfolio-rose">Un poco sobre mí</p>
+                <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Me gusta convertir ideas en experiencias web</h2>
+                <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">Soy estudiante de desarrollo de software en Riwi y estoy construyendo mi camino en el mundo del desarrollo. Este portafolio irá creciendo junto con mis aprendizajes y proyectos.</p>
+            </div>
+        </section>
+
+        <section id="formacion" class="scroll-mt-20 py-20">
+            <div class="mx-auto max-w-6xl px-5 sm:px-8">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] text-portfolio-rose">Mi camino</p>
+                <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Formación</h2>
+                <div class="mt-8 grid gap-6 sm:grid-cols-2">
+                    <article class="rounded-3xl border border-rose-100 bg-white p-7 shadow-sm sm:p-9">
+                        <span class="inline-flex rounded-full bg-rose-50 px-3 py-1 text-sm font-bold text-rose-700">En curso</span>
+                        <h3 class="mt-4 text-xl font-bold">Desarrollo de software</h3>
+                        <p class="mt-2 text-slate-600">Estudiante en Riwi</p>
+                    </article>
+                    <article class="rounded-3xl border border-rose-100 bg-white p-7 shadow-sm sm:p-9">
+                        <span class="inline-flex rounded-full bg-rose-50 px-3 py-1 text-sm font-bold text-rose-700">En curso</span>
+                        <h3 class="mt-4 text-xl font-bold">Ingeniería en Sistemas</h3>
+                        <p class="mt-2 text-slate-600">Estudiante en la UNAD</p>
+                    </article>
+                    <article class="rounded-3xl border border-rose-100 bg-white p-7 shadow-sm sm:p-9">
+                        <span class="inline-flex rounded-full bg-rose-50 px-3 py-1 text-sm font-bold text-rose-700">Finalizado</span>
+                        <h3 class="mt-4 text-xl font-bold">Técnica en Desarrollo de Software</h3>
+                        <p class="mt-2 text-slate-600">Egresada SENA</p>
+                    </article>
+                    <article class="rounded-3xl border border-rose-100 bg-white p-7 shadow-sm sm:p-9">
+                        <span class="inline-flex rounded-full bg-rose-50 px-3 py-1 text-sm font-bold text-rose-700">Finalizado</span>
+                        <h3 class="mt-4 text-xl font-bold">Bootcamp Jóvenes Creativos</h3>
+                        <p class="mt-2 text-slate-600">Fundación Rofé y alianza con la alcaldía de Medellín</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="scroll-mt-20 bg-white py-20">
+            <div class="mx-auto max-w-6xl px-5 sm:px-8">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] text-portfolio-rose">Practicando y aprendiendo</p>
+                <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Proyectos</h2>
+                <div class="mt-8 rounded-3xl border border-dashed border-rose-200 bg-[#fff9f7] px-6 py-12 text-center">
+                    <p class="text-lg font-bold">Muy pronto verás mis proyectos aquí</p>
+                    <p class="mt-2 text-slate-600">Estoy trabajando en nuevas ideas. Mientras tanto, puedes encontrarme en GitHub.</p>
+                    <a href="https://github.com/LuisaEstradaY" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex font-bold text-portfolio-rose underline decoration-rose-300 underline-offset-4 hover:text-rose-700">Ir a GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="scroll-mt-20 px-5 py-20 text-center sm:px-8">
+           
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Gracias por visitar mi portafolio</h2>
+            <p class="mt-4 text-slate-600">Si quieres ponerte en contacto conmigo, escríbeme.</p>
+            <a href="mailto:yepesluu@gmail.com" class="mt-6 inline-flex rounded-full bg-portfolio-ink px-6 py-3 font-bold text-white transition hover:bg-portfolio-rose">yepesluu@gmail.com</a>
+        </section>
+    </main>
+
+    <footer class="border-t border-rose-100 bg-white px-5 py-6 text-center text-sm text-slate-500">
+        <p>© 2026 Luisa Estrada · Hecho con cariño</p>
+    </footer>
+</body>
+</html>
